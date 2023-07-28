@@ -93,3 +93,14 @@ while (num < 27){
 for(var i = 0; i < 4; i++){
     console.log(i);
 }
+
+// switch case
+var case1 = "Apple";
+switch (case1) {
+    case "Banana": 
+    console.log("Thank You for choosing Banana.");                      //it will not show cause the case is not same as case 1
+    break;
+    case "Apple":
+    console.log("Thank You for choosing Apple.")                        //it will show.
+    break;
+}
