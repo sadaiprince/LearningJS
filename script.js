@@ -104,3 +104,54 @@ switch (case1) {
     console.log("Thank You for choosing Apple.")                        //it will show.
     break;
 }
+// js date
+var d = new Date();
+console.log(d);                                                         // it will print the current date and time.
+const d2 = new Date("2022-03-25");
+console.log(d2);                                                        // specific date
+
+// these are the method of showing date.
+
+/*new Date()
+new Date(date string)
+
+new Date(year,month)
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms)
+new Date(milliseconds)
+..
+Date.parse() method to convert it to milliseconds.
+Date.parse() returns the number of milliseconds between the date and January 1, 1970: 
+Example: let msec = Date.parse("March 21, 2012");                       //it will return the value of 1332266400000; because 1332266400000 is the value of date between jan 1, 1970 to  mar 21, 2012*/
+
+/* Method	         Description
+getFullYear()	    Get year as a four digit number (yyyy)
+getMonth()	        Get month as a number (0-11)
+getDate()	        Get day as a number (1-31)
+getDay()	        Get weekday as a number (0-6)
+getHours()	        Get hour (0-23)
+getMinutes()	    Get minute (0-59)
+getSeconds()	    Get second (0-59)
+getMilliseconds()	Get millisecond (0-999)
+getTime()	        Get time (milliseconds since January 1, 1970)*/
+
+// Example:
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const day = ["Sat", "Sun", "Mon", "Tue", "Wed", "thu","Fri"]
+var monthC= new Date();
+console.log(month[monthC.getMonth()])
+console.log(monthC.getDate())
+console.log(day[monthC.getDay()])
+
+/*Method	        Description
+setDate()	        Set the day as a number (1-31)
+setFullYear()	    Set the year (optionally month and day)
+setHours()	        Set the hour (0-23)
+setMilliseconds()	Set the milliseconds (0-999)
+setMinutes()	    Set the minutes (0-59)
+setMonth()	        Set the month (0-11)
+setSeconds()	    Set the seconds (0-59)
+setTime()	        Set the time (milliseconds since January 1, 1970) */
